@@ -109,15 +109,28 @@
 	padding-bottom:20px;
 }
 .termDiv{
-	display:inline-block;
-}
-.termText{
-	
+
 }
 .defDiv{
-	display:inline-block;
+
+}
+.termText{
+	color:#000000;
+
 }
 .defText{
+	color:#000000;
+
+}
+
+/*********************Editing_Terms_Page***********************/
+.editTermDiv{
 	
 }
+.editDefDiv{
+	margin-left:100px;
+	margin-right:100px;
+}
+
+
 }
