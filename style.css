@@ -1,0 +1,46 @@
+html {
+  font-size: 25px;
+}
+
+#title, #folders, #buttons {
+  padding: 10px;
+}
+
+#title {
+  margin-top: 60px;
+}
+
+h1, label {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+#titleinput {
+  height: 10%;
+  width: 70%;
+  background: transparent;
+  border-color: black;
+  margin-left: 7%;
+}
+
+#folders {
+  padding-bottom: 0;
+}
+
+#folders .flex-row {
+  margin-bottom: 100px;
+}
+
+.folder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  border: black 3px solid;
+  border-radius: .25rem;
+}
+
+button {
+  width: 150px;
+}
