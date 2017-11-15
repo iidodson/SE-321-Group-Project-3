@@ -1,0 +1,55 @@
+html {
+  background-color: black;
+  color: white;
+}
+
+#folders {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.folder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  border: 3px solid black;
+}
+
+#title {
+  margin-bottom: 100px;
+}
+
+#title h1 {
+  display: inline;
+  font-size: 40px;
+}
+
+input {
+  height: 30px;
+  font-size: 24px;
+  margin-left: 25px;
+  border: none;
+  background-color: transparent;
+}
+
+#math, #english {
+  margin-bottom: 100px;
+}
+
+#math { background-color: red; }
+#english { background-color: green; }
+#science { background-color: blue; }
+#art { background-color: purple; }
+
+button {
+  height: 30px;
+  width: 150px;
+  border: none;
+  margin: 100px 165px 0 160px;
+}
