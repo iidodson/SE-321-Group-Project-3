@@ -21,7 +21,7 @@
   }
 
   
-  
+  /*********************Index.html****************************/
   .container {
     width: 100%;
     height: 300px;
@@ -77,11 +77,12 @@
   
   
   
-  /*************************Terms_Style******************/
+  /*************************Terms_Style.html******************/
   .header{
 	margin:auto;
 	background-color: #39A0ED;
 	color: #bce6ff;
+	width:100%;
 	display:inline-block;
 	text-align:center;
 	padding-top:20px;
@@ -102,28 +103,46 @@
 
 .content{
 	margin:auto;
+	width:100%;
+	display:inline-block;
 	text-align:center;
 	color: white;
 	padding-bottom:20px;
 }
 .termDiv{
-
+	display:inline-block;
 }
 .defDiv{
-
+	display:inline-block;
 }
 .termText{
 	color:#000000;
-
+	display:inline-block;
 }
 .defText{
 	color:#000000;
-
+	display:inline-block;
 }
 
-/*********************Editing_Terms_Page***********************/
+/*******************Editing_Terms_Page.html***********************/
+.editingHeader{
+	margin:auto;
+	background-color: #39A0ED;
+	color: #bce6ff;
+	width:100%;
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.editingContent{
+	margin:auto;
+	text-align:center;
+	color: white;
+	padding-bottom:20px;
+}
 .editTermDiv{
-	
+	margin-left:100px;
+	margin-right:100px;
 }
 .editDefDiv{
 	margin-left:100px;
