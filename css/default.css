@@ -15,12 +15,6 @@
     color: inherit;
   }
 
-  button {
-    border: none;
-    background-color: inherit;
-  }
-
-  
   /*********************Index.html****************************/
   .container {
     width: 100%;
@@ -74,9 +68,9 @@
     font-size: 1.500rem;
     text-align: center;
   }
-  
-  
-  
+
+
+
   /*************************Terms_Style.html******************/
   .header{
 	margin:auto;
@@ -149,5 +143,40 @@
 	margin-right:100px;
 }
 
+/*******************Saving Notes.html***********************/
 
+  #title, #folders, #buttons {
+    padding: 10px;
+  }
+
+
+  h1, label {
+    font-weight: normal;
+  }
+
+  #titleinput {
+    height: 10%;
+    width: 70%;
+    background: transparent;
+    border-color: black;
+    margin-left: 7%;
+  }
+
+  #folders {
+    padding-bottom: 0;
+  }
+
+  #folders .flex-row {
+    margin-bottom: 100px;
+  }
+
+  .folder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border: black 3px solid;
+    border-radius: .25rem;
+  }
 }
