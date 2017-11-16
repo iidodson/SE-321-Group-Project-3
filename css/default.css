@@ -15,6 +15,14 @@
     color: inherit;
   }
 
+  button {
+    font-size: inherit;
+    background-color: inherit;
+    border: inherit;
+    font-size: inherit;
+    padding: 0;
+  }
+
   /*********************Index.html****************************/
   .container {
     width: 100%;
@@ -149,25 +157,11 @@
     padding: 10px;
   }
 
-
-  h1, label {
-    font-weight: normal;
-  }
-
   #titleinput {
-    height: 10%;
-    width: 70%;
+    width: 100%;
+    font-size: 16px;
     background: transparent;
-    border-color: black;
-    margin-left: 7%;
-  }
-
-  #folders {
-    padding-bottom: 0;
-  }
-
-  #folders .flex-row {
-    margin-bottom: 100px;
+    border: 1px solid #cbd6d6;
   }
 
   .folder {
@@ -176,7 +170,34 @@
     align-items: center;
     height: 200px;
     width: 200px;
-    border: black 3px solid;
-    border-radius: .25rem;
   }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .folders-row {
+    display: flex;
+    text-align: center;
+  }
+
+  .folder-row--title {
+    height: 200px;
+    margin: 10px;
+    line-height: 200px;
+    background-color: yellow;
+    width: 50%;
+    vertical-align: middle;
+  }
+
+  #math {
+    background-color: #39A0ED;
+    color: #bce6ff;
+  }
+
+  #science {
+    background-color: #36F1CD;
+    color: #006666;
+  }
+
 }
