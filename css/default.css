@@ -19,8 +19,8 @@
     font-size: inherit;
     background-color: inherit;
     border: inherit;
-    font-size: inherit;
     padding: 0;
+    font: inherit;
   }
 
   /*********************Index.html****************************/
@@ -66,6 +66,7 @@
     width: 100%;
     display: flex;
     padding: 10px 0px;
+    margin-top: 10px;
   }
 
   .button-container {
@@ -73,7 +74,7 @@
     text-align: center;
 }
   .button-container--text {
-    font-size: 1.500rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 
@@ -153,7 +154,7 @@
 
 /*******************Saving Notes.html***********************/
 
-  #title, #folders, #buttons {
+  #folders, #buttons {
     padding: 10px;
   }
 
@@ -172,7 +173,7 @@
     width: 200px;
   }
 
-  .title {
+  .headline {
     font-size: 16px;
   }
 
@@ -190,14 +191,17 @@
     vertical-align: middle;
   }
 
-  #math {
+  .color1 {
     background-color: #39A0ED;
     color: #bce6ff;
   }
 
-  #science {
+  .color2 {
     background-color: #36F1CD;
     color: #006666;
   }
 
+  .top {
+    padding: 10px;
+  }
 }
