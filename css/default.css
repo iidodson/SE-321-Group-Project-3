@@ -58,7 +58,12 @@
     height: 100%;
     width: 100%;
     border: none;
-    font-size: 1.500rem;
+    font-size: 16px;
+  }
+
+  .form-textarea--flashcard {
+    border: 1px solid #cbd6d6;
+    height: 250px;
   }
 
   .button {
@@ -183,6 +188,7 @@
 
   .headline {
     font-size: 16px;
+    font-weight: bold;
   }
 
   .folders-row {
@@ -213,6 +219,10 @@
     padding: 10px;
   }
 
+  .top-terms{
+    padding-top: 0px;
+  }
+
   .table{
     margin: auto;
     border: #cbd6d6 1px solid;
@@ -231,6 +241,10 @@
 
   .table-divider {
     border-right: #cbd6d6 1px solid;
+  }
+
+  .row{
+    padding-top: 20px;
   }
 
 }

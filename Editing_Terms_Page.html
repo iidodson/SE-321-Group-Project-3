@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <head>
-	<title>Editing_Terms_Page</title>
+	<title>Terms_Page</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/default.css" id="theme-stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/default.css" id="theme-stylesheet">
 </head>
 <body>
-	<div class="editingHeader">
-		<div class="terms">
-			<h1>Terms</h1>
-		</div>
-		<div class="definitions">
-			<h1>Definitions</h1>
-		</div>
+	<div class="header">
+		<h1>Flashcards</h1>
+	</div>
+	<div class="top top-terms">
+		<section id="title">
+			<form>
+				<div>
+					<div>
+						<label for="titleinput" class="headline">Term:</label>
+						<input class="form-control" type="text" id="titleinput" aria-describedby="titleinput" >
+					</div>
+					<div class="row">
+						<label for="titleinput" class="headline">Definition:</label>
+		          <textarea class="form-textarea form-textarea--flashcard"></textarea>
+		      </div>
+				</div>
+			</form>
+		</section>
+
 	</div>
 
 
-	<div class="editingContent">
-		<div class="editTermDiv">
-			<input class="termText" type="text" name="termText" placeholder="Term"></input>
-		</div>
-		<div class="editDefDiv">
-			<input class="defText" type="text" name="defText" placeholder="Definition"></input>
-		</div>
+	<div class="button">
+			<div class="button-container">
+				<a href="Terms_Page.html" class="button-container--text ">Cancel</a>
+			</div>
+			<div class="button-container">
+				<a href="Terms_Page.html" class="button-container--text "><button class="button-container--text" type="button" name="button">Save</button></a>
+			</div>
 	</div>
+	</div>
+
 
 </body>
 </html>
