@@ -67,6 +67,9 @@
     display: flex;
     padding: 10px 0px;
     margin-top: 10px;
+    position: fixed;
+    bottom: 0;
+
   }
 
   .button-container {
@@ -81,19 +84,24 @@
 
 
   /*************************Terms_Style.html******************/
-  .header{
+  .header {
 	margin:auto;
-	background-color: #39A0ED;
-	color: #bce6ff;
 	width:100%;
-	display:inline-block;
+	display: flex;
 	text-align:center;
 	padding-top:20px;
 	padding-bottom:20px;
+  justify-content: center;
 }
 .new_set{
 	display:inline-block;
-	background-color: #39A0ED;
+  font-size: 35px;
+  margin-left: 10px;
+}
+
+.add{
+  color:#39A0ED;
+
 }
 
 .terms{
@@ -204,4 +212,25 @@
   .top {
     padding: 10px;
   }
+
+  .table{
+    margin: auto;
+    border: #cbd6d6 1px solid;
+    border-collapse: collapse;
+  }
+
+  .table-header{
+    padding: 5px 0px;
+    background-color: #cbd6d6;
+
+  }
+
+  .table-data {
+    padding: 0px 30px;
+  }
+
+  .table-divider {
+    border-right: #cbd6d6 1px solid;
+  }
+
 }
