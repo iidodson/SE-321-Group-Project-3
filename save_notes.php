@@ -9,10 +9,23 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
-    echo "Failed database connection";
     die("Connection failed: " . $conn->connect_error);
 }
 
+$subject = $_GET["subject"];
+$title = $_GET["title"];
+$note = $_GET["note"];
+
+$sql = "INSERT INTO notes (subject, title, note) VALUES ('";
+$sql .= $subject . "', '";
+$sql .= $title . "', '";
+$sql .= $note . "');";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Note was added.<br>";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
 
 $conn->close();
 ?> 
@@ -24,8 +37,5 @@ $conn->close();
         <link rel="stylesheet" href="css/default.css" id="theme-stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
-    <body>
-        <button onclick="window.location = 'view_notes.php'">View Notes</button>
-        <button onclick="window.location = 'view_flashcards.php'">View Flashcards</button>
-    </body>
+    <button onclick="window.location = 'view_notes.php'">Return</button>
 </html>
