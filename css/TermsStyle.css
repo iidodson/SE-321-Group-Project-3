@@ -1,38 +1,7 @@
-.header{
-	margin:auto;
-	background-color: rgba(0, 0, 0, 0.78);
-	color: white;
-	padding-top:20px;
-	padding-bottom:20px;
-}
-.terms{
-	display:inline-block;
-	padding-left:40%;
-}
-.definitions{
-	display:inline-block;
-	padding-left:10%;
+table, th, td {
+		border: none;
 }
 
-.content{
-	margin:auto;
-	margin-top:200px;
-	background-color: rgba(0, 0, 0, 0.78);
-	color: white;
-	padding-top:100px;
-	padding-bottom:20px;
-}
-.termDiv{
-	display:inline-block;
-	padding-left:30px;
-}
-.termText{
-	
-}
-.defDiv{
-	display:inline-block;
-	margin-left:45%;
-}
-.defText{
-	
+.nav {
+	padding-left: 0px;
 }

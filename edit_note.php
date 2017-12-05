@@ -30,24 +30,25 @@ if ($row = $result->fetch_assoc()) {
     <head>
         <meta charset="utf-8">
         <title>SE-321 Group Project </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/default.css" id="theme-stylesheet">
+        <link rel="stylesheet" href="css/TermsStyle.css" id="theme-stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
     <body>
         <div>
+          <h1 class="text-header">Notes</h1>
             <form action="update_note.php" method="get">
-                <table>
-                    <tr><td>Subject:</td> <td><input type="text" name="subject" value=<?php echo $_COOKIE['subject']; ?>></td></tr>
-                    <tr><td>Title:</td> <td><input type="text" name="title" value=<?php echo $_COOKIE['title']; ?>></td></tr>
-                    <tr><td></td><td><textarea class="form-textarea" name="note"><?php echo $_COOKIE['note']; ?></textarea></td></tr>
-                    <tr>
-                        <td>
-                            <button onclick="window.location = 'view_notes.php';return false;">Cancel</button>
-                        </td>
-                        <td><input type="submit" value='Done'></td>
-                    </tr>
+              <div class="form-spacing" >
+                <table class="table">
+                    <tr class="table-container" ><td class="table-td">Subject:</td> <td><input class="input" type="text" name="subject" value=<?php echo $_COOKIE['subject']; ?>></td></tr>
+                    <tr class="table-container" ><td>Title:</td> <td><input class="input" type="text" name="title" value=<?php echo $_COOKIE['title']; ?>></td></tr>
                 </table>
+              </div>
+                <textarea class="form-textarea" name="note"><?php echo $_COOKIE['note']; ?></textarea>
+                <div class="nav">
+                  <button class="nav-text" onclick="window.location = 'view_notes.php';return false;">Cancel</button>
+                  <input class="nav-text" type="submit" value='Done'></td>
+                </div>
             </form>
         </div>
     </body>

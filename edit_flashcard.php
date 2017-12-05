@@ -30,24 +30,25 @@ if ($row = $result->fetch_assoc()) {
     <head>
         <meta charset="utf-8">
         <title>SE-321 Group Project </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/default.css" id="theme-stylesheet">
+        <link rel="stylesheet" href="css/TermsStyle.css" id="theme-stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
     <body>
         <div>
+            <h1 class="text-header">Flashcards</h1>
             <form action="update_flashcard.php" method="get">
-                <table>
-                    <tr><td>Subject:</td> <td><input type="text" name="subject" value=<?php echo $_COOKIE['subject']; ?>></td></tr>
-                    <tr><td>Term:</td> <td><input type="text" name="term" value=<?php echo $_COOKIE['term']; ?>></td></tr>
-                    <tr><td>Definition:</td> <td><input type="text" name="definition" value=<?php echo $_COOKIE['definition']; ?>></td></tr>
-                    <tr>
-                        <td>
-                            <button onclick="window.location = 'view_flashcards.php';return false;">Cancel</button>
-                        </td>
-                        <td><input type="submit" value='Done'></td>
-                    </tr>
-                </table>
+              <div class="form-spacing">
+                <table class="table">
+                    <tr class="table-container" ><td class="table-td">Subject:</td> <td><input class="input" type="text" name="subject" value=<?php echo $_COOKIE['subject']; ?>></td></tr>
+                    <tr class="table-container" ><td>Term:</td> <td><input class="input" type="text" name="term" value=<?php echo $_COOKIE['term']; ?>></td></tr>
+                    <tr class="table-container" ><td>Definition:</td> <td><input class="input" type="text" name="definition" value=<?php echo $_COOKIE['definition']; ?>></td></tr>
+                  </table>
+              </div>
+                  <div class="nav">
+                    <button class="nav-text" onclick="window.location = 'view_flashcards.php';return false;">Cancel</button>
+                    <input class="nav-text" type="submit" value='Done'>
+                  </div>
             </form>
         </div>
     </body>

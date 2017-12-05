@@ -5,15 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/default.css" id="theme-stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <style>
-            table, th, td {
-                border: 1px solid black;
-                border-collapse: collapse;
-            }
-        </style>
+
     </head>
-    <button onclick="window.location = 'create_notes.php'">New</button>
-    <button onclick="window.location = 'index.php'">Return</button><br>
+    <h1 class="text-header">Notes</h1>
     <?php
     $dbname = "2534580_notetakerdb";
     $servername = "fdb4.awardspace.net";
@@ -45,6 +39,7 @@
         echo '<th>Subject</th>';
         echo '<th>Title</th>';
         echo '<th>Preview</th>';
+        echo '<th></th>';
         echo '</tr>';
 
         // output data of each row
@@ -52,15 +47,37 @@
             echo '<tr>';
             echo '<td>' . $row["subject"] . '</td>';
             echo '<td>' . $row["title"] . '</td>';
-            echo '<td>' . $row["note"] . '</td>';
-            echo '<td><button onclick="storeIdAndRedirect(' . $row["ID"] . ')">Edit</button></td>';
+
+            // truncate notes to only preview
+            $note = $row["note"];
+            echo '<td>' . truncate($note) . '</td>';
+
+            echo '<td><button class="edit" onclick="storeIdAndRedirect(' . $row["ID"] . ')">Edit</button></td>';
             echo '</tr>';
         }
         echo '</table>';
     } else {
         echo "nothing to show";
     }
+
+    function truncate($string, $length = 20, $append = "&hellip;") {
+        $string = trim($string);
+
+        if (strlen($string) > $length) {
+            $string = wordwrap($string, $length);
+            $string = explode("\n", $string, 2);
+            $string = $string[0] . $append;
+        }
+
+        return $string;
+    }
     ?>
+
+    <br>
+    <div class="nav">
+        <button class="nav-text" onclick="window.location = 'index.php'">Back</button><br>
+        <button class="nav-text" onclick="window.location = 'create_notes.php'">New</button>
+    </div>
 </html>
 
 <script>

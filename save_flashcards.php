@@ -30,13 +30,14 @@
     }
 
     $conn->close();
-    ?> 
+    ?>
     <head>
         <meta charset="utf-8">
         <title>SE-321 Group Project </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/default.css" id="theme-stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
-    <button onclick="window.location = 'view_flashcards.php'">Return</button>
+    <br>
+      <button class="nav nav-text--one" onclick="window.location = 'view_flashcards.php'">Return</button>
+
 </html>

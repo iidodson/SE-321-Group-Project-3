@@ -1,4 +1,3 @@
-@media (max-width: 667px) {
 
   * {
     margin: 0;
@@ -23,228 +22,111 @@
     font: inherit;
   }
 
-  /*********************Index.html****************************/
-  .container {
+  table, th, td {
+      border: 1px solid #cbd6d6;
+      border-collapse: collapse;
+  }
+
+  th {
+    padding: 5px 0px;
+    background-color: #cbd6d6;
+    font-weight: bold;
+  }
+
+  /***New****/
+  .buttons {
+    display: grid;
+  }
+
+  .buttons-large {
     width: 100%;
     height: 300px;
-    vertical-align: middle;
-    margin: 0;
-    display: table;
   }
 
-  .container-high {
-    background-color: #39A0ED;
+  .buttons-colors {
+    background-color: #fdae41;
+    color: white;
   }
 
-  .container-low {
-    background-color: #36F1CD;
+  .buttons-colors2 {
+    background-color: #35c3e3;
+    color: white;
   }
 
-  .title {
+  .text-title {
+    font-size: 24px;
+  }
+
+  .text-header{
     text-align: center;
-    display: table-cell;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+
+  .nav-text {
+    width: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .nav-text--one {
+    text-align: center;
+    font-size: 1.2rem;
     vertical-align: middle;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
   }
 
-  .title-high {
-    color: #bce6ff;
+  .table {
+    width: 100%;
   }
 
-  .title-low {
-    color: #006666;
+  .table-container {
+    margin-bottom: 10px;
+  }
+
+  .table-td {
+    width: 30%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .table-nav {
+    margin-top: 30px;
+  }
+
+  input.nav-text {
+    background-color: inherit;
+    border: inherit;
+}
+
+  .form-spacing {
+    padding: 0px 15px;
   }
 
   .form-textarea {
+    margin-top: 10px;
     height: 100%;
     width: 100%;
     border: none;
     font-size: 16px;
   }
 
-  .form-textarea--flashcard {
-    border: 1px solid #cbd6d6;
-    height: 250px;
-  }
-
-  .button {
-    background-color: #cbd6d6;
+  .nav {
     width: 100%;
     display: flex;
+    background-color: #cbd6d6;
     padding: 10px 0px;
-    margin-top: 10px;
+    margin-top: 20px;
     position: fixed;
     bottom: 0;
-
   }
 
-  .button-container {
-    width: 50%;
-    text-align: center;
-}
-  .button-container--text {
-    font-size: 1.2rem;
-    text-align: center;
+  .edit {
+    border: none;
+    color: #fdae41;
   }
-
-
-
-  /*************************Terms_Style.html******************/
-  .header {
-	margin:auto;
-	width:100%;
-	display: flex;
-	text-align:center;
-	padding-top:20px;
-	padding-bottom:20px;
-  justify-content: center;
-}
-.new_set{
-	display:inline-block;
-  font-size: 35px;
-  margin-left: 10px;
-}
-
-.add{
-  color:#39A0ED;
-
-}
-
-.terms{
-	display:inline-block;
-}
-.definitions{
-	display:inline-block;
-	padding-left:20px;
-}
-
-.content{
-	margin:auto;
-	width:100%;
-	display:inline-block;
-	text-align:center;
-	color: white;
-	padding-bottom:20px;
-}
-.termDiv{
-	display:inline-block;
-}
-.defDiv{
-	display:inline-block;
-}
-.termText{
-	color:#000000;
-	display:inline-block;
-}
-.defText{
-	color:#000000;
-	display:inline-block;
-}
-
-/*******************Editing_Terms_Page.html***********************/
-.editingHeader{
-	margin:auto;
-	background-color: #39A0ED;
-	color: #bce6ff;
-	width:100%;
-	text-align:center;
-	padding-top:20px;
-	padding-bottom:20px;
-}
-.editingContent{
-	margin:auto;
-	text-align:center;
-	color: white;
-	padding-bottom:20px;
-}
-.editTermDiv{
-	margin-left:100px;
-	margin-right:100px;
-}
-.editDefDiv{
-	margin-left:100px;
-	margin-right:100px;
-}
-
-/*******************Saving Notes.html***********************/
-
-  #folders, #buttons {
-    padding: 10px;
-  }
-
-  #titleinput {
-    width: 100%;
-    font-size: 16px;
-    background: transparent;
-    border: 1px solid #cbd6d6;
-  }
-
-  .folder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 200px;
-  }
-
-  .headline {
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-  .folders-row {
-    display: flex;
-    text-align: center;
-  }
-
-  .folder-row--title {
-    height: 200px;
-    margin: 10px;
-    line-height: 200px;
-    background-color: yellow;
-    width: 50%;
-    vertical-align: middle;
-  }
-
-  .color1 {
-    background-color: #39A0ED;
-    color: #bce6ff;
-  }
-
-  .color2 {
-    background-color: #36F1CD;
-    color: #006666;
-  }
-
-  .top {
-    padding: 10px;
-  }
-
-  .top-terms{
-    padding-top: 0px;
-  }
-
-  .table{
-    margin: auto;
-    border: #cbd6d6 1px solid;
-    border-collapse: collapse;
-  }
-
-  .table-header{
-    padding: 5px 0px;
-    background-color: #cbd6d6;
-
-  }
-
-  .table-data {
-    padding: 0px 30px;
-  }
-
-  .table-divider {
-    border-right: #cbd6d6 1px solid;
-  }
-
-  .row{
-    padding-top: 20px;
-  }
-
-}
